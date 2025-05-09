@@ -4,7 +4,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'sudo docker build -t jenkins-build .'
+                    sh 'docker build -t jenkins-build .'
                 }
             }
         }
